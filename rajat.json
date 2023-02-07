@@ -1,0 +1,9 @@
+{
+    "url": "https://raw.githubusercontent.com/rajatsynack/swagger/main/rajat.yaml",
+    "urls": [
+        {
+            "url": "https://raw.githubusercontent.com/rajatsynack/swagger/main/rajat.yaml",
+            "name": "Foo"
+        }
+    ]
+}
