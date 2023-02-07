@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <img src=x onerror="prompt('XSS')">
+    <img src=x onerror="confirm('XSS')">
 
   version: production
 basePath: /JSSResource/
