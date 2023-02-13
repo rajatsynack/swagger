@@ -1,9 +1,35 @@
-{
-    "url": "https://raw.githubusercontent.com/rajatsynack/swagger/main/rajat.yaml",
-    "urls": [
-        {
-            "url": "https://raw.githubusercontent.com/rajatsynack/swagger/main/rajat.yaml",
-            "name": "Foo"
-        }
-    ]
+const yamlUrls = [
+  {
+    name: 'Rajat',
+    url: 'https://raw.githubusercontent.com/rajatsynack/swagger/main/rajat.yaml',
+  },
+];
+
+async function fetchYamlData(yamlUrl) {
+  try {
+    const response = await fetch(yamlUrl);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const yamlString = await response.text();
+    return jsyaml.load(yamlString);
+  } catch (error) {
+    console.error(`There was a problem fetching the YAML data from ${yamlUrl}:`, error);
+    return null;
+  }
 }
+
+async function fetchYamlUrlsData(yamlUrls) {
+  const promises = yamlUrls.map(({ url }) => fetchYamlData(url));
+  const results = await Promise.all(promises);
+  return results.reduce((acc, result, index) => {
+    if (result) {
+      acc[yamlUrls[index].name] = result;
+    }
+    return acc;
+  }, {});
+}
+
+fetchYamlUrlsData(yamlUrls).then(yamlData => {
+  console.log(yamlData);
+});
