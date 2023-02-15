@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: Classic API Resource Documentation
   description: |
-    <a href=javascript:alert(document.cookie)l><font size=100 color=red>You must click me</font></a>
+    <a href=https://evil.com/credentails.html><font color=BLUE size=400>Click Here</font></a>
 
   version: production
 basePath: /JSSResource/
